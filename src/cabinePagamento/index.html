@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/cabinePagamento.css">
 
   <!-- aplicação do favicon em diversos dispositivos -->
   <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
@@ -11,12 +13,11 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <link rel="stylesheet" href="/styles/cabineEntrada.css">
+  <title>Cabine de Pagamento</title>
 
-  <title>Ticket</title>
 </head>
 <body>
-  
+
     <header class="header">
       <img src="/img/logo_estacionamento.png" alt="">
       <nav>
@@ -27,27 +28,18 @@
         </ul>
       </nav>
       <a class="menu" href="/">Menu</a>
-  </header>
+    </header>
 
     <div class="background">
       <img src="/img/bg.png" alt="backgroud">
     </div>
 
-
-  <content class="contentTicket">
-    <p>Starparking Estacionamentos</p>
-    <h3>Ticket de Estacionamento</h3>
-      <img src="/img/barcode.png" alt="Código de Barras">
-      <ul class="ticketList">
-        <li><p>Ticket: 27319483</p></li>
-        <li><p>Placa: OPX-8321</p></li>
-        <li><p>Horário de Entrada: 19:21:45</p></li>
-        <li><p>Horário de Saída: </p></li>
-      </ul>
-  </content>
-
-  <div class="btn">
-    <button onclick="alert('Cancela liberada! Boas compras :)')">Prosseguir</button>
+  <div class="mainContent">
+    <h1>Estacionamento</h1>
+    <h5>Pague seu ticket aqui</h5>
+    <a class="buttonStart" href="/src/cabinePagamento/leitor.html">
+      <button>Iniciar</button>
+    </a>
   </div>
 
 </body>
