@@ -94,7 +94,7 @@ body{
   font-size: 20px;
   border-radius: 8px;
   border: 0px transparent;
-  padding: 2px;
+  padding: 4px;
   width: 250px;
   cursor: pointer;
 }
@@ -170,7 +170,7 @@ body{
   font-size: 20px;
   border-radius: 8px;
   border: 0px transparent;
-  padding: 2px;
+  padding: 4px;
   width: 150px;
   cursor: pointer;
 }

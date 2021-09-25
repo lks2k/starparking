@@ -25,8 +25,35 @@
     <a class="menu" href="/">Menu</a>
   </header>
 
-  <div class="background">
-    <img src="/img/bg.png" alt="backgroud">
+    <div class="background">
+      <img src="/img/bg.png" alt="backgroud">
+    </div>
+
+    <content class="mainTarifa">
+      <p>Tempo total de permanência: 2h 24min</p>
+      <h1>Tarifa: R$ 11,00</h1>
+    </content>
+
+
+  <content class="contentTicket">
+    <p>Starparking Estacionamentos</p>
+    <h3>Ticket de Estacionamento</h3>
+      <img src="/img/barcode.png" alt="Código de Barras">
+      <ul class="ticketList">
+        <li><p>Ticket: 27319483</p></li>
+        <li><p>Placa: OPX-8321</p></li>
+        <li><p>Horário de Entrada: 19:21:45</p></li>
+        <li><p>Horário de Saída: 21:45:12</p></li>
+      </ul>
+  </content>
+
+  <div class="searchCancel">
+    <a href="/src/cabinePagamento/leitor.html">
+      <button class="buttonBack">Voltar</button>
+    </a>
+    <a href="/src/cabinePagamento/tarifa.html">
+      <button class="buttonPay" onclick='alert("Pagamento efetuado com sucesso!")'>Pagar</button>
+    </a>
   </div>
 
 </body>

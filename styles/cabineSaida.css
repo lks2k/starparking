@@ -1,0 +1,100 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "sans-serif", "Arial", "Helvetica";
+  list-style: none;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+/* ------------ Início da Estilização do Header e Background ------------- */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 10px;
+  background: #693ACC;
+}
+
+.header img{
+  width: 15vh;
+  height: 8vh;
+  object-fit: cover;
+}
+
+.headerList{
+  list-style: none;
+  color: white;
+  padding: 1px;
+  margin-right: 80px;
+}
+
+
+.menu{
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 20px;
+}
+
+.background img{
+  position: absolute;
+  opacity: 0.8;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+/* ---------------- Fim da Estilização do Header e Background ------------- */
+
+
+/* ----------------- Início da Estilização do saída.html --------------- */
+
+.mainContent{
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+  text-shadow: .3rem .4rem 2px rgb(0, 0, 0, .4);
+  padding: 8px;
+  font-size: 48px;
+  margin-top: 100px;
+}
+
+.inputTicket{
+  margin-top: 25px;
+  font-size: 25px;
+  width: 350px;
+}
+
+.linkButton button{
+  font-size: 20px;
+  border-radius: 8px;
+  border: 0px transparent;
+  padding: 4px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.linkButton{
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 150px;
+}

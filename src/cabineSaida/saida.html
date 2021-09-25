@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/cabineSaida.css">
 
-  <link rel="stylesheet" href="/styles/cabinePagamento.css">
-
-  
-  <title>Leitor</title>
+  <title>Cabine de Saída</title>
 </head>
+
 <body>
-  
+
   <header class="header">
     <img src="/img/logo_estacionamento.png" alt="">
     <nav>
@@ -29,21 +27,17 @@
     <img src="/img/bg.png" alt="backgroud">
   </div>
 
-  <div class="mainLeitor">
-    <h4>Digite o código do ticket abaixo:</h4>
-    <form>
-      <input class="codeInput" name="ticketcode" type="search" maxlength="10" class="inputPlate" placeholder="Digite o código"> <!-- alterar o length após conclusão do bd -->
-    </form>
-  </div>
 
-  <div class="searchCancel">
-    <a href="/src/cabinePagamento/pagamento.html">
-      <button class="buttonBack">Cancelar</button>
+  <content class="mainContent">
+    <h1>Estacionamento</h1>
+    <p>Insira o código do ticket para liberar sua saída:</p>
+    <form>
+      <input class="inputTicket" maxlength="10" type="search" name="ticketId" placeholder="Insira o código aqui">
+    </form>
+    <a class="linkButton">             <!-- this a class gona be deleted after javascript -->
+      <button onclick='alert("Cancela Liberada! Obrigado e volte sempre.")' > Continuar </button>
     </a>
-    <a href="/src/cabinePagamento/tarifa.html">
-      <button>Pesquisar</button>
-    </a>
-  </div>
+  </content>
 
 </body>
 </html>
