@@ -4,7 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/cabineSaida.css">
+
+  <!-- aplicação do favicon em diversos dispositivos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <link rel="stylesheet" href="../../styles/cabineSaida.css">
 
   <title>Cabine de Saída</title>
 </head>
@@ -12,19 +19,38 @@
 <body>
 
   <header class="header">
-    <img src="/img/logo_estacionamento.png" alt="">
-    <nav>
-      <ul class="headerList">
-        <li><p>Data: 19/09/2021</p></li>
-        <li><p>Hora: 21:34:57</p></li>
-        <li><p>Shopping....</p></li>
-      </ul>
-    </nav>
-    <a class="menu" href="/">Menu</a>
+    <img src="../../img/logo_estacionamento.png" alt="">
+    <div class="menu" href="/">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
   </header>
 
   <div class="background">
-    <img src="/img/bg.png" alt="backgroud">
+    <img src="../../img/bg.png" alt="backgroud">
+  </div>
+
+  <div class="sidebar-menu">
+    <nav>
+      <table class="ticket-table">
+        <tr>
+          <th>Ticket ID</th><th>Condição</th>
+        </tr>
+        <tr>
+          <th>321334382</th><th>Pago</th>
+        </tr>
+        <tr>
+          <th>321334382</th><th>Não Pago</th>
+        </tr>
+        <tr>
+          <th>321334382</th><th>Não Pago</th>
+        </tr>
+        <tr>
+          <th>321334382</th><th>Pago</th>
+        </tr>
+      </table>
+    </nav>
   </div>
 
 
@@ -40,4 +66,7 @@
   </content>
 
 </body>
+
+  <script src="../script.js"></script>
+
 </html>

@@ -18,10 +18,20 @@ body{
 /* ------------------ Início da Estilização do header ------------- */
 
 .menu{
+  position: fixed;
   text-decoration: none;
   color: white;
-  display: block;
-  padding: 20px;
+  cursor: pointer;
+  left: 95%;
+  z-index: 100;
+}
+
+.menu div{
+  height: 2px;
+  width: 32px;
+  background-color: white;
+  margin: 8px;
+  box-shadow: 0.1rem 0.1rem 1px black;
 }
 
 .header{
@@ -195,7 +205,6 @@ body{
   position: absolute;
   display: flex;
   justify-content: flex-start;
-  height: 100px;
   text-decoration: none;
   margin: 10px;
 }
@@ -246,3 +255,9 @@ td, th{
   vertical-align: middle;
 }
 
+.tableName{
+  color: white;
+  position: absolute;
+  font-size: 30px;
+  margin-left: 12px;
+}

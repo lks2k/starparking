@@ -36,19 +36,30 @@ body{
 }
 
 .headerList{
+  left: 50%;
+  transform: translate(-50%, -50%);
   list-style: none;
   color: white;
   padding: 1px;
-  margin-right: 80px;
 }
-
 
 .menu{
+  position: fixed;
   text-decoration: none;
   color: white;
-  display: block;
-  padding: 20px;
+  cursor: pointer;
+  left: 95%;
+  z-index: 100;
 }
+
+.menu div{
+  height: 2px;
+  width: 32px;
+  background-color: white;
+  margin: 8px;
+  box-shadow: 0.1rem 0.1rem 1px black;
+}
+
 
 .background img{
   position: absolute;
@@ -92,7 +103,8 @@ body{
   padding: 3px;
   width: 200px;
   cursor: pointer;
-  color: rgb(37, 187, 31);
+  color: white;
+  background-color: rgb(48, 216, 48);
 }
 
 /* ------------ Fim da Estilização do index.html ----------- */
@@ -137,6 +149,33 @@ body{
   padding: 4px;
   width: 200px;
   cursor: pointer;
+}
+
+.sidebar-menu{
+  position: fixed;
+  width: 20rem;
+  height: 100vh;
+  background-color: white;
+  z-index: 90;
+  top: 0;
+  right: -20rem;
+  transition: all 1s;
+}
+
+.sidebar-menu.show-menu{
+  right: 0;
+}
+
+.ticket-table{
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  font-size: 18px;
+}
+
+.ticket-table td, th{
+  border: 1px solid black;
+  padding: 10px;
 }
 
 /* ---------- Fim da Estilização do leitor.html ----------- */

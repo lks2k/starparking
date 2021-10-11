@@ -34,6 +34,8 @@ body{
 }
 
 .headerList{
+  left: 100%;
+  transform: translate(-50% -50%);
   list-style: none;
   color: white;
   padding: 1px;
@@ -42,10 +44,20 @@ body{
 
 
 .menu{
+  position: fixed;
   text-decoration: none;
   color: white;
-  display: block;
-  padding: 20px;
+  cursor: pointer;
+  left: 95%;
+  z-index: 100;
+}
+
+.menu div{
+  height: 2px;
+  width: 32px;
+  background-color: white;
+  margin: 8px;
+  box-shadow: 0.1rem 0.1rem 1px black;
 }
 
 .background img{
@@ -97,4 +109,31 @@ body{
   align-items: flex-end;
   justify-content: center;
   height: 150px;
+}
+
+.sidebar-menu{
+  position: fixed;
+  width: 20rem;
+  height: 100vh;
+  background-color: white;
+  z-index: 90;
+  top: 0;
+  right: -20rem;
+  transition: all 1s;
+}
+
+.sidebar-menu.show-menu{
+  right: 0;
+}
+
+.ticket-table{
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  font-size: 18px;
+}
+
+.ticket-table td, th{
+  border: 1px solid black;
+  padding: 10px;
 }

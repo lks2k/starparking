@@ -4,7 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/cabineGerenciamento.css">
+
+  <!-- aplicação do favicon em diversos dispositivos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <link rel="stylesheet" href="../../styles/cabineGerenciamento.css">
 
   <title>Login Admin</title>
 </head>
@@ -12,12 +19,16 @@
 <body>
  
   <header class="header">
-    <img src="/img/logo_estacionamento.png" alt="">
-    <a class="menu" href="/">Menu</a>
+    <img src="../../img/logo_estacionamento.png" alt="">
+    <div class="menu" href="/">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
 </header>
 
 <div class="background">
-    <img src="/img/bg.png" alt="backgroud">
+    <img src="../../img/bg.png" alt="backgroud">
 </div>
 
 
@@ -32,7 +43,7 @@
       <form>
         <input type="password" name="passwordAdmin" placeholder=" Digite a senha">
       </form>
-      <a href="/src/cabineGerenciamento/mainscreen.html">
+      <a href="../../src/cabineGerenciamento/mainscreen.html">
         <button class="buttonLogin">Login</button>
       </a>
     </div>

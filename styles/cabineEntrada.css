@@ -28,10 +28,20 @@ body{
 
 
 .menu{
+  position: fixed;
   text-decoration: none;
   color: white;
-  display: block;
-  padding: 20px;
+  cursor: pointer;
+  left: 95%;
+  z-index: 100;
+}
+
+.menu div{
+  height: 2px;
+  width: 32px;
+  background-color: white;
+  margin: 8px;
+  box-shadow: 0.1rem 0.1rem 1px black;
 }
 
 .header{

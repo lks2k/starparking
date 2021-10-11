@@ -6,44 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- aplicação do favicon em diversos dispositivos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
 
-    <link rel="stylesheet" href="/styles/cabineEntrada.css">
+    <link rel="stylesheet" href="../../styles/cabineEntrada.css">
     <title>Cabine de Entrada</title>
 
 </head>
 <body>
 
-        <header class="header">
-            <img src="/img/logo_estacionamento.png" alt="">
-            <nav>
-                <ul class="headerList">
-                    <li><p>Data: 19/09/2021</p></li>
-                    <li><p>Hora: 21:34:57</p></li>
-                    <li><p>Shopping....</p></li>
-                </ul>
-            </nav>
-            <a class="menu" href="/">Menu</a>
-        </header>
-    
-        <div class="background">
-            <img src="/img/bg.png" alt="backgroud">
+    <header class="header">
+        <img src="../../img/logo_estacionamento.png" alt="">
+        <div class="menu" href="/">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
+    </header>
 
-        <content class="mainContent">
-            <h1>Estacionamento</h1>
-            <p>Digite abaixo a placa do veículo e pressione o botão</p>
-            <form>
-                <input type="search" maxlength="8" class="inputPlate" placeholder="ABC-0123">
-            </form>
-            <a class="linkButton" href="/src/cabineEntrada/ticket.html">             <!-- this a class gona be deleted after javascript -->
-                <button> Continuar </button>
-            </a>
-        </content>
+    <div class="background">
+        <img src="../../img/bg.png" alt="backgroud">
+    </div>
+
+    <content class="mainContent">
+        <h1>Estacionamento</h1>
+        <p>Digite abaixo a placa do veículo e pressione o botão</p>
+        <form>
+            <input type="search" maxlength="8" class="inputPlate" placeholder="ABC-0123">
+        </form>
+        <a class="linkButton" href="../../src/cabineEntrada/ticket.html">             <!-- this a class gona be deleted after javascript -->
+            <button> Continuar </button>
+        </a>
+    </content>
 
     <script type="text/javascript" src="./src/index.js"></script>
     <noscript>Está página depende de Javascript para seu funcionamento!</noscript>
