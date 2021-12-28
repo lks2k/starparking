@@ -1,0 +1,263 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Arial", "Helvetica";
+  list-style: none;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+/* ------------------ Início da Estilização do header ------------- */
+
+.menu{
+  position: fixed;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  left: 95%;
+  z-index: 100;
+}
+
+.menu div{
+  height: 2px;
+  width: 32px;
+  background-color: white;
+  margin: 8px;
+  box-shadow: 0.1rem 0.1rem 1px black;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 10px;
+  background: #693ACC;
+}
+
+
+.header img{
+  width: 15vh;
+  height: 8vh;
+  object-fit: cover;
+}
+
+.background img{
+  position: absolute;
+  opacity: 0.8;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* ------------------ Fim da Estilização do header ------------- */
+
+/* ----------------- Início da Estilização do login.html ------------- */
+
+.mainContent{
+  position: absolute;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 5px;
+  width: 25%;
+  height: 60%;
+  padding: 8px;
+}
+
+.infoLogin{
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: start;
+  font-size: 20px;
+  top: 35%;
+  margin: 10px;
+}
+
+.infoLogin input{
+  font-size: 22px;
+  border: 0px transparent;
+  background-color: rgb(192, 192, 192);
+}
+
+.infoLogin button{
+  width: 280px;
+  border: 0px transparent;
+  border-radius: 4px;
+  background-color: #693ACC;
+  color: white;
+  height: 30px;
+  margin-top: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* --------------- Fim da estilização do login.html ------------ */
+
+
+/* --------------- Início da Estilização do screen.html -------------- */
+
+.screenContent{
+  position: absolute;
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  height: 75%;
+  width: 70%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.userProfile{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 15px;
+  padding: 5px;
+  height: 25%;
+}
+
+.userProfile img{
+  width: 100%;
+  height: 20%;
+  padding: 2px;
+}
+
+.acessButtons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 45px;
+  height: 15%;
+  width: 100%;
+  margin-top: 20%;
+}
+
+.acessButtons button{
+  border: 0px transparent;
+  background-color: #693ACC;
+  color: white;
+  border-radius: 4px;
+  width: 110%;
+  height: 55px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* --------------- Fim da estilização do screen.html ------------ */
+
+
+/* --------------- Início da estilização do qtdveiculos.html -------------- */
+
+.veiculosContent{
+  position: absolute;
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  height: 75%;
+  width: 70%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.qtdVeiculos{
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 25px;
+  font-size: 28px;
+  top: 35%;
+  height: 25%;
+  width: 45%;
+}
+
+.veiculosContent img{
+  width: 100%;
+  height: 20%;
+  padding: 2%;
+}
+
+.buttonBack{
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.buttonBack button{
+  background-color: red;
+  color: white;
+  border: 0px transparent;
+  border-radius: 15px;
+  width: 200px;
+  height: 40px;
+  padding: 3px;
+  font-size: 20px;
+  margin-top: 370%;
+  cursor: pointer;
+}
+
+/* ---------------- Fim da estilização do qtdveiculos.html -------------- */
+
+
+/* ------------- Início da estilização do dadospag.html ---------------- */
+
+.pagamentoTable{
+  position: absolute;
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  height: 75%;
+  width: 70%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pagamentoTable td, table, th{
+  border: 1px solid black;
+  padding: 10px;
+  left: 50%;
+}
+
+table{
+  width: 500px;
+  table-layout: fixed;
+}
+
+td, th{
+  height: 50px;
+  vertical-align: middle;
+}
+
+.tableName{
+  color: white;
+  position: absolute;
+  font-size: 30px;
+  margin-left: 12px;
+}

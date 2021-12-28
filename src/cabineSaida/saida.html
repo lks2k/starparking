@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- aplicação do favicon em diversos dispositivos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <link rel="stylesheet" href="../../styles/cabineSaida.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./scriptSaida.js"></script>
+
+  <title>Cabine de Saída</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <img src="../../img/logo_estacionamento.png" alt="">
+    <div class="menu" href="/">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
+
+  <div class="background">
+    <img src="../../img/bg.png" alt="backgroud">
+  </div>
+
+  <div class="sidebar-menu">
+    <nav>
+      <table class="ticket-table">
+        <tr>
+          <th>Ticket ID</th><th>Condição</th>
+        </tr>
+        <tr>
+          <th id="id1"></th><th id="cond1"></th>
+        </tr>
+        <tr>
+          <th id="id2"></th><th id="cond2"></th>
+        </tr>
+        <tr>
+          <th id="id3"></th><th id="cond3"></th>
+        </tr>
+        <tr>
+          <th id="id4"></th><th id="cond4"></th>
+        </tr>
+        <tr>
+          <th id="id5"></th><th id="cond5"></th>
+        </tr>
+        <tr>
+          <th id="id6"></th><th id="cond6"></th>
+        </tr>
+        <tr>
+          <th id="id7"></th><th id="cond7"></th>
+        </tr>
+      </table>
+    </nav>
+  </div>
+
+
+  <content class="mainContent">
+    <h1>Estacionamento</h1>
+    <p>Insira o código do ticket para liberar sua saída:</p>
+    <form>
+      <input id="inputSaida" class="inputTicket" maxlength="10" type="search" name="ticketId" placeholder="Insira o código aqui">
+    </form>
+    <a class="linkButton">
+      <button onclick='saida()'> Continuar </button>
+    </a>
+  </content>
+
+</body>
+
+  <script src="../script.js"></script>
+  
+
+</html>

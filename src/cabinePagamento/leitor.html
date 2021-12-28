@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- aplicação do favicon em diversos dispositivos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+
+  <link rel="stylesheet" href="../../styles/cabinePagamento.css">
+
+  
+  <title>Leitor</title>
+</head>
+<body>
+
+  
+  <header class="header">
+    <div class="menu" href="/">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <img src="../../img/logo_estacionamento.png" alt="">
+  </header>
+
+  <div class="background">
+    <img src="../../img/bg.png" alt="backgroud">
+  </div>
+
+  <div class="sidebar-menu">
+    <nav>
+      <table class="ticket-table">
+        <tr>
+          <th>Ticket ID</th><th>Condição</th>
+        </tr>
+        <tr>
+          <th id="id1"></th><th id="cond1"></th>
+        </tr>
+        <tr>
+          <th id="id2"></th><th id="cond2"></th>
+        </tr>
+        <tr>
+          <th id="id3"></th><th id="cond3"></th>
+        </tr>
+        <tr>
+          <th id="id4"></th><th id="cond4"></th>
+        </tr>
+        <tr>
+          <th id="id5"></th><th id="cond5"></th>
+        </tr>
+        <tr>
+          <th id="id6"></th><th id="cond6"></th>
+        </tr>
+        <tr>
+          <th id="id7"></th><th id="cond7"></th>
+        </tr>
+      </table>
+    </nav>
+      
+
+  </div>
+
+  <div class="mainLeitor">
+    <h4>Digite o código do ticket abaixo:</h4>
+    <input id="searchInput" class="codeInput" name="ticketcode" class="inputPlate" placeholder="Digite o código">
+    <button class="buttonSearch" onclick="searchTicket()">Pesquisar</button>
+  </div>
+
+  <div class="searchCancel">
+    <a href="../../src/cabinePagamento/pagamento.html">
+      <button class="buttonBack">Cancelar</button>
+    </a>
+  </div>
+
+</body>
+
+  <script src="../script.js"></script>
+  <script src="./scriptLeitor.js"></script>
+  <script src="./scriptMenu.js"></script>
+
+  
+</html>

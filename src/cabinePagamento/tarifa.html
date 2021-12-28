@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- aplicação do favicon em diversos dispositivos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="../../styles/cabinePagamento.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+
+  <title>Tarifa</title>
+
+</head>
+<body>
+
+  <header class="header">
+    <img src="../../img/logo_estacionamento.png" alt="">
+    <div class="menu" href="/">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
+
+    <div class="background">
+      <img src="../../img/bg.png" alt="backgroud">
+    </div>
+
+    <content class="mainTarifa">
+      <p>Tempo total de permanência: 2h 24min</p>
+      <h1 id="tarifa"></h1>
+    </content>
+
+
+  <content class="contentTicket">
+    <p>Starparking Estacionamentos</p>
+    <h3>Ticket de Estacionamento</h3>
+      <img src="../../img/barcode.png" alt="Código de Barras">
+      <ul class="ticketList">
+        <li><p id="ticket"></p></li>
+        <li><p id="placa"></p></li>
+        <li><p id="entrada"></p></li>
+        <li><p id="saida"></p></li>
+      </ul>
+  </content>
+
+  <div class="searchCancel">
+    <a href="../../src/cabinePagamento/leitor.html">
+      <button class="buttonBack">Voltar</button>
+    </a>
+    <a>
+      <button class="buttonPay" onclick='pagar()'>Pagar</button>
+    </a>
+  </div>
+  
+  <script src="./scriptTarifa.js"></script>
+
+</body>
+</html>

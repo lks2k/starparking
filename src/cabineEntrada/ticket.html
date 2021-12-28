@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- aplicação do favicon em diversos dispositivos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="../../styles/cabineEntrada.css">
+  <script src="./scriptTicket.js"></script>
+
+  <title>Ticket</title>
+</head>
+<body>
+  
+    <header class="header">
+      <img src="../../img/logo_estacionamento.png" alt="">
+      <div class="menu" href="/">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+  </header>
+
+    <div class="background">
+      <img src="../../img/bg.png" alt="backgroud">
+    </div>
+
+
+  <content class="contentTicket">
+    <p>Starparking Estacionamentos</p>
+    <h3>Ticket de Estacionamento</h3>
+      <img src="../../img/barcode.png" alt="Código de Barras">
+      <ul class="ticketList">
+        <li><p id="ticket"></p></li>
+        <li><p id="placa">Placa: OPX-8321</p></li>
+        <li><p id="entrada">Horário de Entrada: 19:21:45</p></li>
+        <li><p id="saida">Horário de Saída: </p></li>
+      </ul>
+  </content>
+
+  <div class="btn">
+    <button onclick="alert('Cancela liberada! Boas compras :)')">Prosseguir</button>
+  </div>
+
+
+</body>
+</html>

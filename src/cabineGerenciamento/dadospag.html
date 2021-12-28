@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- aplicação do favicon em diversos dispositivos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <link rel="stylesheet" href="../../styles/cabineGerenciamento.css">
+
+  <title>Dados de Pagamento</title>
+</head>
+
+<body>
+  
+  <header class="header">
+    <img src="../../img/logo_estacionamento.png" alt="">
+    <div class="menu" href="/">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
+
+  <div class="background">
+   <img src="../../img/bg.png" alt="backgroud">
+  </div>
+
+  <p class="tableName">Tabela Pagamentos</p>
+
+  <table class="pagamentoTable">
+    <tr>
+      <th>Ticket ID</th><th>Horário de Pagamento</th><th>Permanência Total</th>
+    </tr>
+    <tr>
+      <td id="id1"></td>><td id="date1"></td><td></td>
+    </tr>
+    <tr>
+      <td id="id2"></td><td id="date2"></td><td></td>
+    </tr>
+    <tr>
+      <td id="id3"></td><td id="date3"></td><td></td>
+    </tr>
+    <tr>
+      <td id="id4"></td><td id="date4"></td><td></td>
+    </tr>
+    <tr>
+      <td id="id5"></td><td id="date5"></td><td></td>
+    </tr>
+  </table>
+
+  <a class="buttonBack" href="../../src/cabineGerenciamento/mainscreen.html">
+    <button>Voltar</button>
+  </a>
+
+  <script src="./scriptDadosPag.js"></script>
+
+</body>
+</html>
